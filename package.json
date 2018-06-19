@@ -1,0 +1,26 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "feathers-nuxt documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feathers-nuxt/docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feathers-nuxt/docs/issues"
+  },
+  "homepage": "https://github.com/feathers-nuxt/docs#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "vuepress": "^0.10.1"
+  }
+}

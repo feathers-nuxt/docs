@@ -1,20 +1,5 @@
----
-home: true
-heroImage: //avatars0.githubusercontent.com/u/38314364?s=400&u=8633016f343ee358eff026bdd842fc1071f9bbe2&v=4.png
-actionText: Get Started →
-actionLink: /guide/
-features:
-- title: CLI
-  details: Project initialization, live-reload, build, database migration and seeding, app deployment command line scripts included.
-- title: UI
-  details: Render Sigle Page App uniformly on Node or Browser using nuxt. Includes feathers client behind vuex store modules.
-- title: API 
-  details: Access database file-system resources uniformly from either Node or Browser using feathers with nuxt middleware to serve UI SPA.
-footer: MIT Licensed | Copyright © 2018-present kelvin kharhys
----
 
-
-## Quick start
+### Quick start
 Ensure you have installed `f3` cli globally. At the moment the package isn't published to `npm` so you'd install from [github](https://github.com/feathers-nuxt/cli). Just run: 
 > `npm i -g github:feathers-nuxt/cli`
 
@@ -23,7 +8,7 @@ To start a new `feathers-nuxt` project using `f3` cli, just invoke the following
 
 This will clone the template in this repository using [saojs](https://github.com/saojs/sao) and create a boilerplate, inside `awesome-project` directory, customized as per your answers to the prompted questions.
 
-### Directory structure
+#### Directory structure
 An application initialized using `f3` will have the following directory stucture
 
 
