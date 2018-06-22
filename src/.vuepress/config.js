@@ -1,6 +1,6 @@
 module.exports = {
   	title: 'feathers-nuxt',
-  	description: 'frontend first framework',
+  	description: 'flexible fullstack framework',
   	serviceWorker: true,
   	themeConfig: {
 	    nav: [
