@@ -1,8 +1,8 @@
 ---
-title: Architecture Guide
+title: Architecture
 ---
 
-## Logical structure
+## Architecture
 
 Can be considered data driven in architecture. There are, conceptually, two layers  
 Relies on the capabilities of both `nuxt` and `feathers` to run on both the `browser` and `node`.
@@ -28,7 +28,7 @@ Within ***nuxt resources*** the server instance can be accessed from `Vue` `SFC`
 It is recommended to externalize back-end services access logic outside components into store actions where you can access the server as `this.app.api`. However, there are other features of the back-end `api` that you may want to use in your components. For instance, `storyboard` logging (More on that below).
 :::
 
-### `nuxt` baked into `feathers`
+## nuxt within feathers
 
 The content of `src/server` are processed by backpack are processed through `backpack` following configurations in declared under the key `backpack` in the file `f3.config`.  
 
@@ -36,10 +36,12 @@ The content of `src/server` are processed by backpack are processed through `bac
 
 In addition to standard `feathers` **server** resources, a middleware is included for leveraging `nuxt` on the server. It sets up `nuxt` for **server side rendering** and stashes the app instance in the context of every `request` so that it is accessible within `nuxtServerInit`.
 
->Ensure that nuxt middleware is declared last and that middleware configuration is last to set up.
+:::tip
+Ensure that nuxt middleware is declared last and that middleware configuration is last to set up.
+:::
 
 
-#### `feathers` baked into `nuxt`
+## feathers within nuxt
 
 The contents of `src/client` are processed through `nuxt` following configurations in declared under the key `nuxt` in the file `f3.config` See [nuxt documentation](https://nuxtjs.org/).
 
@@ -47,15 +49,12 @@ In addition to the resources in a standard `nuxt` project,   `src/client` includ
 
 The instance is available within `Vue` components as `this.$store.app.api` and within `Vuex` store modules as `this.app.api` to provide access to backend `services`.
 
-> Ensure that you first declare every service you intend to use in `api/feathers.js` 
+:::tip
+Ensure that you first declare every service you intend to use in `api/feathers.js` 
+:::
 
 When rendering is done server-side, `feathers-client`is never initialized. Instead, `feathers` server instance will be availed as stated above. 
 
->Thanks, to its isomorphic design, replacing  `feathers` **client ** *instance* with **server** *instance* does not necessiate changing our code.
-
-
-## Features
-
-The following features are availed by default
-
-
+:::tip
+When rendering on the server, the instance of `feathers-client` passed to `nuxt` is setup to use `HTTP` transport while the instance used with the browser renderer is setup to use `WebSocket` transport. The two versions are, however, functionally equivalent.
+:::

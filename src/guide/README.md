@@ -1,14 +1,14 @@
 ---
-title: Usage Guide
+title: Quick Start
 ---
+## Installation
 
 Ensure you have [sao](https://sao.js.org/) installed globally. `yarn` is preferred to `npm`, although you may use the later if you so wish.
 ```bash
 sao feathers-nuxt/template-app awesome-app --update
 ```
 You will be prompted to answer a couple of questions to determine how the template should be customized to your needs. Sao will then clone the template in this repository and put the customized template inside `awesome-app` directory.
-
-## Installation
+ 
 You may also use `f3` cli instead of `sao` if you install it globally. At the moment the `f3` isn't published to `npm` so you'd install from [github](https://github.com/feathers-nuxt/cli)
 ```bash
 yarn global add github:feathers-nuxt/cli
