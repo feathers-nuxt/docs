@@ -8,7 +8,7 @@ module.exports = {
 	    ],
 	    sidebar: [
 	        {
-	          title: 'Usage Guide',
+	          title: 'Usage',
 	          collapsable: false,
 	          children: [
 	            '/guide/',
@@ -16,7 +16,7 @@ module.exports = {
 	          ]
 	        },
 	        // {
-	        //   title: 'UI Guide',
+	        //   title: 'Scripts',
 	        //   collapsable: false,
 	        //   // children: [
 	        //   //     '/ui'
