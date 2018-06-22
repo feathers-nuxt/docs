@@ -9,7 +9,7 @@ Relies on the capabilities of both **nuxt** and **feathers** to run on both the 
 
 This is a **feathers** server using embeded **nuxt** middleware for building and rendering **UI** defined as **Vue** **SFC**s.
 
-> Tip Building only happens when app runs in **development** mode. Ensure you build the client before starting server in **production** mode.
+> Building only happens when app runs in **development** mode. Ensure you build the client before starting server in **production** mode.
 
 By default, **nuxt** is set to build in **universal** mode so that the resulting build is an **isomorphic**; it can be used by the embedded middleware to render a ***route*** as a **pwa** that supports client-side navigation. **feathers** being isomorphic as well provides access to backend service to the universal build during rendering on the server and to the rendered ***route*** during interactions on the browser. 
 
@@ -22,10 +22,6 @@ When a ***route*** in the **universal build** is rendered server side, the the s
 
 Within ***nuxt resources*** the server instance can be accessed from **Vue** **SFC** script as **this.$store.app.api** or as **this.app.api** from **Vuex** store modules. It can also be accessed in your page middleware as well.
 
-:::tip
-It is recommended to externalize back-end services access logic outside components into store actions where you can access the server as **this.app.api**. However, there are other features of the back-end **api** that you may want to use in your components. For instance, **storyboard** logging (More on that below).
-:::
-
 ## nuxt within feathers
 
 The content of **src/server** are processed by backpack are processed through **backpack** following configurations in declared under the key **backpack** in the file **f3.config**.  
@@ -34,7 +30,7 @@ The content of **src/server** are processed by backpack are processed through **
 
 In addition to standard **feathers** **server** resources, a middleware is included for leveraging **nuxt** on the server. It sets up **nuxt** for **server side rendering** and stashes the app instance in the context of every **request** so that it is accessible within **nuxtServerInit**.
 
-> Tip Ensure that nuxt middleware is declared last and that middleware configuration is last to set up.
+> Ensure that nuxt middleware is declared last and that middleware configuration is last to set up.
 
 ## feathers within nuxt
 
@@ -44,7 +40,7 @@ In addition to the resources in a standard **nuxt** project,   **src/client** in
 
 The instance is available within **Vue** components as **this.$store.app.api** and within **Vuex** store modules as **this.app.api** to provide access to backend **services**.
 
-> Tip Ensure that you first declare every service you intend to use in **api/feathers.js** 
+> Ensure that you first declare every service you intend to use in **api/feathers.js** 
 
 When rendering is done server-side, **feathers-client**is never initialized. Instead, **feathers** server instance will be availed as stated above. 
 
