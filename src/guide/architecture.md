@@ -5,8 +5,7 @@ title: Architecture
 ## Directory Structure
 An application initialized using f3 will have the following directory stucture
 
-
-text
+```text
 ├── f3.config.js                   # nuxt & backpack configuration
 ├── .babelrc                       # babel configuration to use with backpack
 ├── .podhook                       # shell commands to run on remote server during deploy
@@ -47,6 +46,7 @@ text
             └── migrations         # procedures to creates and drop tables
         └── middleware             
             └── nuxt.ls            # nuxt middleware for SSR
+```
 
 ## Logical Structure
 The application is is an express instance containg nuxt SSR middleware for serving ui routes and a feathers sub app for serving api routes.
