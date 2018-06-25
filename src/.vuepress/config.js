@@ -12,7 +12,8 @@ module.exports = {
 	          collapsable: false,
 	          children: [
 	            '/guide/',
-	            '/guide/architecture.md'
+	            '/guide/architecture.md',
+	            '/guide/disambiguation.md'
 	          ]
 	        },
 	        // {
