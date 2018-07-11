@@ -2,7 +2,7 @@
 title: Quick Start
 ---
 
-## Introdution
+## Introduction
 
 **f3** is a set of utilities for integrating feathers and nuxt. It aims to enable fast prototyping of production ready full stack applications without foregoing developer happiness.
 

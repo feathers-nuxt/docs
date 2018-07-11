@@ -5,15 +5,25 @@ module.exports = {
   	themeConfig: {
 	    nav: [
 	        { text: 'Guide', link: '/guide/' },
+	        { text: 'Scripts', link: '/scripts/' },
 	    ],
 	    sidebar: [
 	        {
-	          title: 'Usage',
+	          title: 'Guide',
 	          collapsable: false,
 	          children: [
 	            '/guide/',
 	            '/guide/architecture.md',
 	            '/guide/disambiguation.md'
+	          ]
+	        },
+	        {
+	          title: 'Scripts',
+	          collapsable: false,
+	          children: [
+	            '/scripts/',
+	            // '/scripts/architecture.md',
+	            // '/scripts/disambiguation.md'
 	          ]
 	        },
 	        // {
