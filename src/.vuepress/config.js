@@ -6,6 +6,7 @@ module.exports = {
 	    nav: [
 	        { text: 'Guide', link: '/guide/' },
 	        { text: 'Scripts', link: '/scripts/' },
+	        { text: 'Features', link: '/features/' },
 	    ],
 	    sidebar: [
 	        {
@@ -22,6 +23,15 @@ module.exports = {
 	          collapsable: false,
 	          children: [
 	            '/scripts/',
+	            // '/scripts/architecture.md',
+	            // '/scripts/disambiguation.md'
+	          ]
+	        },
+	        {
+	          title: 'Features',
+	          collapsable: false,
+	          children: [
+	            '/features/',
 	            // '/scripts/architecture.md',
 	            // '/scripts/disambiguation.md'
 	          ]
