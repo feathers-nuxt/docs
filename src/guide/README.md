@@ -13,7 +13,7 @@ It also provides a few other utilities that make developing fullstack applicatio
 
 > When using an SQL database, f3 will include npm scripts for running migrations and seeding database.
 
-## Installation
+## Scaffolding
 
 Ensure you have [sao](https://sao.js.org/) installed globally. yarn is preferred to npm, although you may use the later if you so wish.
 ```bash
