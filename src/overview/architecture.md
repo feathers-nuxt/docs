@@ -98,12 +98,10 @@ Within ***nuxt resources*** the server instance can be accessed from **Vue** **S
 
 ### feathers client within nuxt
 
-Feathers client instance is accessible as `store.app.api` from nuxt context object or within **Vue** components as `this.$store.app.api` or within **Vuex** store modules as `this.app.api` to provide access to backend services within nuxt.
-
-> Ensure that you first declare every service you intend to use in **utils/initClient.js** 
+Feathers client instance is accessible as `store.app.api` from nuxt context object or within **Vue** components as `this.$store.app.api` or within **Vuex** store modules as `this.app.api` to provide access to backend services within nuxt. All services you have setup on feathers feathers server are automatically available via feathers client under `store.app.api.services` object.
 
 :::tip
-When rendering on the server, the instance of **feathers-client** passed to **nuxt** is setup to use **HTTP** transport while the instance used with the browser renderer is setup to use **WebSocket** transport. The two versions are, however, functionally equivalent.
+When rendering on the server, the instance of **feathers-client** passed to **nuxt** is setup to use **HTTP** transport while the instance used with the browser renderer is setup to use **WebSocket** transport. The two instances are, however, functionally equivalent.
 :::
 
 ### feathers services as vuex modules

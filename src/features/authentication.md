@@ -1,5 +1,0 @@
-`feathers-nuxt` includes Local (username/password) authentication out of the box. It setup an `/authentication` endpoint to create `JSON Web Tokens` (JWT) for use as access tokens. 
-
-Authentication requests are initiated on the client using [@feathersjs/authentication-client](https://docs.feathersjs.com/api/authentication/client.html) and fulfilled at the server using [@feathersjs/authentication](https://docs.feathersjs.com/api/authentication/server.html) both already correctly set up.
-
-The methods `app.api.signup`, `app.api.signin` and `app.api.signout` are availed to every client side file for invoking the respective authentication requests. Upon successful authentication, the issued `JWT` is persisted in the configured backing storage mechanism - `window.localStorage` by default - and maybe retrieved and verified by invoking the relevant methods ons `app.api.passport` of the user. 

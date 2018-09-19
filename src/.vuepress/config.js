@@ -4,52 +4,32 @@ module.exports = {
   	serviceWorker: true,
   	themeConfig: {
 	    nav: [
+	        { text: 'Overview', link: '/overview/' },
 	        { text: 'Guide', link: '/guide/' },
-	        { text: 'Scripts', link: '/scripts/' },
-	        { text: 'Features', link: '/features/' },
 	    ],
 	    sidebar: [
+	        {
+	          title: 'Overview',
+	          collapsable: false,
+	          children: [
+	            '/overview/',
+	            '/overview/architecture.md',
+	            '/overview/disambiguation.md'
+	          ]
+	        },
 	        {
 	          title: 'Guide',
 	          collapsable: false,
 	          children: [
 	            '/guide/',
-	            '/guide/architecture.md',
-	            '/guide/disambiguation.md'
+	            '/guide/scripts.md', 
+	            '/guide/configuration.md',
+	            '/guide/routing.md', 
+	            '/guide/services.md', 
+	            '/guide/logging.md', 
+	            '/guide/caching.md', 
 	          ]
 	        },
-	        {
-	          title: 'Scripts',
-	          collapsable: false,
-	          children: [
-	            '/scripts/',
-	            // '/scripts/architecture.md',
-	            // '/scripts/disambiguation.md'
-	          ]
-	        },
-	        {
-	          title: 'Features',
-	          collapsable: false,
-	          children: [
-	            '/features/',
-	            // '/scripts/architecture.md',
-	            // '/scripts/disambiguation.md'
-	          ]
-	        },
-	        // {
-	        //   title: 'Scripts',
-	        //   collapsable: false,
-	        //   // children: [
-	        //   //     '/ui'
-	        //   // ]
-	        // },
-	        // {
-	        //   title: 'API Guide',
-	        //   collapsable: false,
-	        //   // children: [
-	        //   //     '/api'
-	        //   // ]
-	        // }
 	      ]
 	}
 }
