@@ -5,12 +5,12 @@ actionText: Get Started →
 actionLink: /guide/
 features:
 - title: feathers 
-  details: Access database file-system resources uniformly from either Node or Browser. Includes nuxt middleware for Server Side Rendering the UI app.
+  details: Access database, file-system, network resources uniformly from either Node or Browser. Includes nuxt middleware for Server Side Rendering the UI app.
 - title: feathers-nuxt
   details: Utilities for integrating feathers with nuxt inluding a starter template with npm scripts to live-reload, build and deploy app, migrate and seed database.
 - title: nuxt
   details: Render Vue uniformly on Node or Browser. Setup with feathers-client and feathers-vuex for availing feathers services as vuex store modules.
-footer: MIT Licensed | Copyright © 2018-present kelvin kharhys
+footer: MIT Licensed | Copyright © 2018 [kharhys](https://github.com/kharhys)
 
 ---
 
